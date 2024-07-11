@@ -10,3 +10,26 @@
  */
 
 console.log('ejercicio 3') //no quitar este console.log, empezar debajo el ejercicio
+
+function operación(número1, número2, operación = 'sumar') {
+    let mensaje = ''
+    switch (operación) {
+        case 'sumar':
+            mensaje = `${número1} + ${número2} = ` + (número1 + número2)
+            break
+        case 'restar':
+            mensaje = `${número1} - ${número2} = ` + (número1 - número2)
+            break
+        default:
+            mensaje = 'operación desconocida'
+    }
+    console.log(mensaje)
+}
+
+
+operación(3, 6)
+operación(6, 3)
+operación(3, 6, 'sumar')
+operación(6, 3, 'sumar')
+operación(3, 6, 'restar')
+operación(6, 3, 'restar')

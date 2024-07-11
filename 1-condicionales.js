@@ -12,3 +12,22 @@
  */
 
 console.log('ejercicio 1') //no quitar este console.log, empezar debajo el ejercicio
+
+let mensaje = ''
+switch (window.prompt('Operación?')) {
+    case '+':
+        mensaje = 'sumar'
+        break
+    case '-':
+        mensaje = 'restar'
+        break
+    case 'x':
+        mensaje = 'multiplicar'
+        break
+    case '/':
+        mensaje = 'dividir'
+        break
+    default:
+        mensaje = 'no conozco esa operación'
+}
+console.log(mensaje)
